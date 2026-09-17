@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="KAzuLink,烛龙,电控,机器人,轮腿,STM32">
+  <meta name="description" content="KAzuLink · 烛龙电控记录与传承">
+  <title>KAzuLink · 首页</title>
+  <link rel="icon" type="image/png" href="preview.jpg">
+
+  <!-- Font Awesome 图标 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css">
+  <!-- AOS 滚动动画（与闲居同款） -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============ 顶部导航 ============ -->
+  <header class="navbar-fixed">
+    <nav id="headNav" class="nav-transparent">
+      <div class="container">
+        <div class="brand">
+          <a href="index.html" class="waves-effect">
+            <img src="preview.jpg" class="logo-img" alt="LOGO">
+            <span>KAzuLink</span>
+          </a>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="waves-effect"><i class="fas fa-home"></i><span>首页</span></a></li>
+          <li><a href="about.html" class="waves-effect"><i class="fas fa-user"></i><span>关于</span></a></li>
+          <li><a href="categories.html" class="waves-effect"><i class="fas fa-bookmark"></i><span>分类</span></a></li>
+          <li><a href="https://github.com/KAzuLInk" target="_blank" class="waves-effect"><i class="fab fa-github"></i><span>GitHub</span></a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ============ Hero Banner ============ -->
+  <section class="hero">
+    <div class="hero-inner">
+      <h1 class="site-title" data-aos="fade-up">KAzuLink</h1>
+      <p class="site-subtitle" data-aos="fade-up" data-aos-delay="150">记录研发过程 · 连接每一代电控</p>
+    </div>
+    <a href="#main" class="scroll-down"><i class="fas fa-chevron-down"></i></a>
+  </section>
+
+  <!-- ============ 主体 ============ -->
+  <main class="main" id="main">
+    <div class="container layout">
+
+      <!-- 左侧个人卡片 -->
+      <aside class="card profile-card" data-aos="fade-right">
+        <div class="profile-cover"></div>
+        <div class="profile-body">
+          <a class="profile-main" href="about.html" title="查看关于我">
+            <img src="preview.jpg" class="avatar" alt="头像">
+            <h2 class="profile-name">KAzu</h2>
+            <p class="profile-title">烛龙战队 · 电控组长</p>
+            <p class="profile-bio">新大二，从零啃电控，正在做平衡轮腿。把走过的坑都记下来，留给后来的队友。</p>
+          </a>
+          <div class="profile-links">
+            <a href="https://github.com/KAzuLInk" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://space.bilibili.com/" target="_blank" title="B站"><i class="fab fa-bilibili"></i></a>
+            <a href="mailto:you@example.com" title="邮箱"><i class="fas fa-envelope"></i></a>
+            <a href="#" title="CSDN"><i class="fas fa-c"></i></a>
+          </div>
+          <div class="profile-stats">
+            <div class="stat"><b>6</b><span>分类</span></div>
+            <div class="stat"><b>2</b><span>文章</span></div>
+            <div class="stat"><b>3</b><span>项目</span></div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- 右侧文章列表 -->
+      <section>
+        <div class="section-head" data-aos="fade-left">
+          <h2><i class="fas fa-newspaper"></i>最新笔记</h2>
+          <a class="more" href="categories.html">全部分类 <i class="fas fa-angle-right"></i></a>
+        </div>
+
+        <!-- POSTS_START -->
+        <article class="card post-card hoverable" data-aos="fade-up">
+          <div class="post-meta">
+            <span><i class="fas fa-calendar"></i>2026-08-18</span>
+            <span><i class="fas fa-bookmark"></i>入门/框架</span>
+            <span><i class="fas fa-tags"></i>分层 · 框架 · 可移植</span>
+          </div>
+          <h3><a href="post-code-layering.html">代码分层以及代码可读性</a></h3>
+          <p class="post-excerpt">从 APP / modules / bsp / HAL 四层讲起，说清楚依赖方向为什么要单向向下，以及 APP 层为什么应该是一串函数调用。</p>
+        </article>
+
+        <article class="card post-card hoverable" data-aos="fade-up" data-aos-delay="100">
+          <div class="post-meta">
+            <span><i class="fas fa-calendar"></i>2026-08-05</span>
+            <span><i class="fas fa-bookmark"></i>电机控制</span>
+            <span><i class="fas fa-tags"></i>前馈 · 稳态误差 · 最小二乘</span>
+          </div>
+          <h3><a href="post-feedforward.html">前馈初步认识</a></h3>
+          <p class="post-excerpt">从斜坡木块讲清稳态误差怎么来的、Ki 为什么慢，再到 DM-4310 的 MIT 模式 PD + t_ff 架构，最后落到最小二乘法辨识。</p>
+        </article>
+      <!-- POSTS_END -->
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ============ 右侧弹出分类抽屉 ============ -->
+  <aside class="category-drawer" id="categoryDrawer">
+    <div class="drawer-handle" id="drawerHandle">
+      <i class="fas fa-bars-staggered"></i>
+      <span class="handle-text">分 类</span>
+    </div>
+    <div class="drawer-body">
+      <div class="drawer-title"><i class="fas fa-bookmark"></i>全部分类</div>
+      <a class="drawer-item" href="categories.html#framework"><i class="fas fa-layer-group"></i>入门/框架<span class="count">1</span></a>
+      <a class="drawer-item" href="categories.html#motor"><i class="fas fa-gauge-high"></i>电机控制<span class="count">1</span></a>
+      <a class="drawer-item" href="categories.html#leg"><i class="fas fa-person-running"></i>平衡轮腿<span class="count">0</span></a>
+      <a class="drawer-item" href="categories.html#chassis"><i class="fas fa-gears"></i>底盘/云台<span class="count">0</span></a>
+      <a class="drawer-item" href="categories.html#review"><i class="fas fa-flag-checkered"></i>比赛复盘<span class="count">0</span></a>
+      <a class="drawer-item" href="categories.html#pitfall"><i class="fas fa-triangle-exclamation"></i>踩坑记录<span class="count">0</span></a>
+    </div>
+  </aside>
+
+  <!-- ============ 返回顶部 ============ -->
+  <button class="to-top" id="toTop" title="返回顶部"><i class="fas fa-arrow-up"></i></button>
+
+  <!-- ============ 页脚 ============ -->
+  <footer>
+    <p>© 2026 KAzuLink · 烛龙战队电控记录</p>
+    <p>Made with <span class="heart">❤</span> by <a href="about.html">KAzu</a> · 灵感来自「闲居」</p>
+  </footer>
+
+  <!-- AOS 动画 -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
