@@ -214,6 +214,7 @@ function pageShell(p) {
           <li><a href="index.html" class="waves-effect"><i class="fas fa-home"></i><span>首页</span></a></li>
           <li><a href="about.html" class="waves-effect"><i class="fas fa-user"></i><span>关于</span></a></li>
           <li><a href="categories.html" class="waves-effect"><i class="fas fa-bookmark"></i><span>分类</span></a></li>
+          <li><a href="leg-plan.html" class="waves-effect"><i class="fas fa-calendar-check"></i><span>日历</span></a></li>
           <li><a href="https://github.com/KAzuLInk" target="_blank" class="waves-effect"><i class="fab fa-github"></i><span>GitHub</span></a></li>
         </ul>
       </div>
